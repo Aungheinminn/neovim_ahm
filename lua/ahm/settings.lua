@@ -8,7 +8,7 @@ vim.g.minimap_width = 10
 vim.g.minimap_auto_start = 1
 vim.g.minimap_auto_start_win_enter = 1
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
