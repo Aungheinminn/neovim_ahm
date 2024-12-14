@@ -67,4 +67,3 @@ vim.api.nvim_create_autocmd("BufLeave", {
 --
 -- -- Initially hide the command line
 -- hide_cmdline()
-
