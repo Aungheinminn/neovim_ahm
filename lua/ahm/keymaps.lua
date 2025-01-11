@@ -10,10 +10,11 @@ vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagn
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
 -- Map 4 to undo
-vim.api.nvim_set_keymap("n", "4", "u", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "u", "u", { noremap = true, silent = true })
 
 -- Map 5 to redo
-vim.api.nvim_set_keymap("n", "5", "<C-r>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "R", "<C-r>", { noremap = true, silent = true })
+
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
 --
