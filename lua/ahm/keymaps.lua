@@ -22,6 +22,36 @@ vim.api.nvim_set_keymap("n", "R", "<C-r>", { noremap = true, silent = true })
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
+vim.keymap.set("n", "<leader>se", "<Cmd>Neotree reveal float<CR>")
+
+-- Telescope highlights
+vim.api.nvim_set_hl(0, "TelescopePrompt", { bg = "none" })
+vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
+vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none" })
+vim.api.nvim_set_hl(0, "TelescopePromptBorder", { bg = "none" })
+vim.api.nvim_set_hl(0, "TelescopePromptTitle", { bg = "none" })
+vim.api.nvim_set_hl(0, "TelescopeTitle", { bg = "none" })
+
+-- NeoTree highlights
+vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "none" })
+vim.api.nvim_set_hl(0, "NeoTreeFloatNormal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NeoTreeFloatBorder", { bg = "none" })
+vim.api.nvim_set_hl(0, "NeoTreeFloatTitle", { bg = "none" })
+vim.api.nvim_set_hl(0, "NeoTreeTitleBar", { bg = "none" })
+vim.api.nvim_set_hl(0, "NeoTreeFloatBorder", { bg = "none" })
+vim.api.nvim_set_hl(0, "NeoTreeWinSeparator", { bg = "none" })
+
+local bg = current_bg_color()
+
+if bg then
+	vim.api.nvim_set_hl(0, "FloatBorder", { bg = bg })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = bg })
+	vim.api.nvim_set_hl(0, "NeoTreeFloatNormal", { bg = bg })
+	vim.api.nvim_set_hl(0, "NeoTreeFloatBorder", { bg = bg })
+	vim.api.nvim_set_hl(0, "NeoTreeFloatTitle", { bg = bg })
+end
+
 -- TIP: Disable arrow keys in normal mode
 -- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
 -- vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')

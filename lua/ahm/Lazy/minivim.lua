@@ -3,8 +3,6 @@ return {
 	"ggandor/leap.nvim",
 	-- Detect tabstop and shiftwidth automatically
 	"tpope/vim-sleuth",
-	-- "gc" to comment visual regions/lines
-	{ "numToStr/Comment.nvim", opts = {} },
 	-- Add, change, and delete surrounding text
 	{ "echasnovski/mini.surround", version = false },
 	-- Highlight todo, notes, etc in comments
