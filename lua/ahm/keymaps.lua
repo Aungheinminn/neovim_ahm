@@ -12,7 +12,7 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 -- Map 4 to undo
 vim.api.nvim_set_keymap("n", "u", "u", { noremap = true, silent = true })
 
--- Map 5 to redo
+-- Map R to redo
 vim.api.nvim_set_keymap("n", "R", "<C-r>", { noremap = true, silent = true })
 
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which

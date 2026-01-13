@@ -1,28 +1,30 @@
 return {
-	"nvim-tree/nvim-tree.lua",
-	version = "*",
-	lazy = false,
-	dependencies = {
-		"nvim-tree/nvim-web-devicons",
-	},
-	config = function()
-		require("nvim-tree").setup({
-			sort_by = "case_sensitive",
-			view = {
-				width = 30,
-			},
-			renderer = {
-				group_empty = true,
-			},
-			filters = {
-				dotfiles = false,
-			},
-			git = {
-				ignore = false,
-			},
-		})
-	end,
-	keys = {
-		{ "<leader>e", "<cmd>NvimTreeToggle<CR>", desc = "Toggle file explorer" },
-	},
+  "nvim-tree/nvim-tree.lua",
+  version = "*",
+  lazy = false,
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+  },
+  config = function()
+    require("nvim-tree").setup {
+      -- your configuration options here
+      sort_by = "case_sensitive",
+      view = {
+        width = 30,
+      },
+      renderer = {
+        group_empty = true,
+      },
+      filters = {
+        dotfiles = false,
+      },
+      git = {
+          ignore = false
+      }
+    }
+  end,
+  keys = {
+    { "<leader>z", "<cmd>NvimTreeToggle<CR>", desc = "Toggle file explorer" },
+  }
 }
+
